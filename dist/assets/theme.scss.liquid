@@ -1367,6 +1367,12 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 
 /*================ CUSTOM ================*/
+a {
+  color: $c-beige;
+  &:hover {
+    color: $c-orange;
+  }
+}
 .home-headline {
   font-size: 20px;
 
@@ -1383,10 +1389,14 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   // Image is set in the 'featured-hero.liquid' section
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: -50px; // height of header logo offset
   text-align: center;
 
   h1,
   h2 { color: #fff; }
+
+  h1 { padding-top: 100px; font-size: 46px; }
+  h2 { font-size: 22px; }
 
   height: 500px;
 }
