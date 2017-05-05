@@ -1,0 +1,38 @@
+<style>
+  {% if section.settings.background != blank %}
+    .T-HOME-hero {
+      background-image: url('{{ section.settings.background | img_url : 'x2000' }}');
+    }
+  {% endif %}
+</style>
+
+<div class="T-HOME-hero">
+  <h1>Welcome to The Chocobo Shop!</h1>
+  <h2>Customize your own Chocobo and start your adventure.</h2>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Featured Hero"
+      },
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Hero",
+        "category": "Collection"
+      }
+    ]
+  }
+
+{% endschema %}

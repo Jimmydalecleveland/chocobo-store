@@ -9,3 +9,15 @@
     font-size: 36px;
   }
 }
+
+.T-HOME-hero {
+  // Image is set in the 'featured-hero.liquid' section
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1,
+  h2 { color: #fff; }
+
+  height: 500px;
+}
