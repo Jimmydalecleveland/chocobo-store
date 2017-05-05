@@ -133,7 +133,7 @@ $color-primary: {{ settings.color_primary }};
 $color-body-text: {{ settings.color_body_text }};
 
 // Backgrounds
-$color-body: #fff;
+$color-body: #fff6ea;
 
 // Border colors
 $color-border: #f6f6f6;
@@ -145,6 +145,12 @@ $color-error: #000;
 $color-error-bg: #000;
 $color-success: #000;
 $color-success-bg: #000;
+
+// Theme Colors
+$c-beige: #f1e7db;
+$c-brown: #6a453f;
+$c-dark-brown: #472f2b;
+$c-orange: #e69e4c;
 
 /*================ Typography Variables ================*/
 $font-weight-normal: 400;
@@ -1373,6 +1379,37 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   }
 }
 
+.O-header {
+  background-color: $c-dark-brown;
+  padding: 0.7rem 0;
+  margin-bottom: 50px;
+
+  h1 { margin: 0; }
+
+  .site-logo {
+    margin-bottom: -40px;
+  }
+}
+
+.O-header-nav {
+  ul { margin: 0; padding: 0; }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    color: $c-beige;
+    font-size: 20px;
+    padding: 0.5em 1em 0.5em 0;
+    text-decoration: none;
+
+    &:hover {
+      color: $c-orange;
+    }
+  }
+}
 .T-PRODUCT-buy__title {
   margin-top: 0;
 }
