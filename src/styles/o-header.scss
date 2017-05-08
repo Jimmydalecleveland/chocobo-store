@@ -17,6 +17,21 @@
   }
 }
 
+.O-header__cart {
+  float: left;
+  margin-right: 20px;
+}
+
+.O-header__search-input {
+  padding: 0.3em;
+}
+
+.O-header__search-button {
+  padding: 0.3em 0.5em;
+  background-color: $c-orange;
+  color: #fff;
+}
+
 .O-header-nav {
   ul { margin: 0; padding: 0; }
 
